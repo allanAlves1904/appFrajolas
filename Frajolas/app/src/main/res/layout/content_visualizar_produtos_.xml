@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="br.com.frajolas.visualizar_produtos_Activity"
+    tools:showIn="@layout/activity_visualizar_produtos"
+    android:orientation="vertical"
+    android:background="#dddddd"
+    android:padding="5dp"
+    android:weightSum="1">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:layout_weight="0.43">
+
+        <TextView
+
+            android:id="@+id/txtDescricao"
+            android:layout_marginTop="13dp"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="descricao do produto descricao do produto descricao do produto descricao do produto descricao do produto"/>
+
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_gravity="center"
+
+                />
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.5"
+                android:id="@+id/percentual_avaliacaos"/>
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(100)"
+                android:id="@+id/total_avaliacaos"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:paddingTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="R$"
+                android:textColor="#bab8b8"/>
+
+            <TextView
+                android:id="@+id/preco_promo"
+                android:layout_width="79dp"
+                android:layout_height="wrap_content"
+                android:text=" 50,00"
+                android:textColor="#bab8b8"/>
+
+            <TextView
+                android:id="@+id/categoria"
+                android:layout_width="79dp"
+                android:layout_height="wrap_content"
+                android:text="categoria"
+                android:textColor="#000"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="R$ "
+                android:textSize="20dp"
+                android:textColor="#2a8700"/>
+
+            <TextView
+                android:id="@+id/preco"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="40,00"
+                android:textColor="#2a8700"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Avalie esse produto"
+            android:gravity="center_horizontal"
+            android:textSize="20dp"
+            android:paddingTop="20dp"
+            android:textStyle="bold"/>
+
+        <RatingBar
+            android:id="@+id/ratingBarAvaliacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Enviar"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="#fff"
+            android:id="@+id/btnsalvar"
+            android:onClick="salvar"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

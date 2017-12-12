@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:padding="16dp"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/img_pizza"
+        android:src="@drawable/pizza"
+        android:layout_marginRight="10dp"
+        android:layout_weight="0.41"
+        android:layout_gravity="center"/>
+    <TextView
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:id="@+id/txt_nome_pizza"
+        android:text="peperone "
+        android:textStyle="italic|bold"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+         />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_gravity="center"
+
+        />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="R$ "
+                android:gravity="center"
+                android:textColor="#00822b"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_valor"
+                android:text="45,00 "
+                android:gravity="center"
+                android:textColor="#00822b"
+
+                />
+
+
+
+        </LinearLayout>
+
+
+</LinearLayout>

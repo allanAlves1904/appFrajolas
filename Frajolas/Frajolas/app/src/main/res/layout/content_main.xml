@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.frajolas.content_main"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ofertas selecionadas para você"
+        android:gravity="center"
+        android:textStyle="bold|italic"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"/>
+
+
+
+
+    <GridView
+
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnWidth="2dp"
+        android:numColumns="2"
+        android:verticalSpacing="5dp"
+        android:horizontalSpacing="4dp"
+        android:gravity="center">
+
+    </GridView>
+
+
+</LinearLayout>

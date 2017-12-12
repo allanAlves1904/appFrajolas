@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Frajolas</string>
+    <string name="primeira">Localização</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_maps">Map</string>
+</resources>
